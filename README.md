@@ -95,12 +95,41 @@
  ```
 - Agora que sabemos o nome do arquivo vamos edita-lo:
 
-*Use o comando, para entrar no modo de edição do vim:*
+*Use o comando, para entrar no modo de edição do vim (Pode ser pedido a sua senha de usuário):*
 ```
 sudo vi /etc/sysconfig/network-scripts/ifcfg-NOME_DA_SUA_INTERFACE
 ```
 
 ![network-file](./images/networkfile03.png)
 
+- Quando estiver dentro do arquivo aperte **I** para entrar no modo **INSERT**
 
+![editfile](./images/editfile04.png)
 
+- Edite o seu arquivo com as novas informações:
+```
+BOOTPROTO=static
+IPADDR=SEU_IP
+NETMASK=SUA_MASCARA
+GATEWAY=SEU_GATEWAY
+```
+
+- Depois de editar, *Aperte Esc (para entrar no modo comando), e use o comando para sair e salvar:*
+
+```
+:wq
+```
+- Reinicie o serviço de rede para aplicar as alterações *(Pode ser pedido a senha)*:
+```
+sudo systemctl restart NetworkManager
+```
+- Verifique se as novas informações foram atualizadas:
+
+*Use o comando:*
+
+```
+ip address
+```
+- Voce pode verificar que o endereço IP foi atualizado em ***Inet***
+
+![restart-network](./images/restart06.png)
