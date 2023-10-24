@@ -1,4 +1,4 @@
-### Desafio 02 - Trilha DevSecOps na CompassUOL - Sprint 1
+## Desafio 02 - Trilha DevSecOps na CompassUOL - Sprint 1
 ![Compass-logo](./images/compass-uol.png)
 
 # Crie duas máquinas virtuais
