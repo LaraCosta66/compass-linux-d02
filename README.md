@@ -1,4 +1,7 @@
-# Desafio 2 - Crie duas máquinas virtuais
+### Desafio 02 - Trilha DevSecOps na CompassUOL - Sprint 1
+![Compass-logo](./images/compass-uol.png)
+
+# Crie duas máquinas virtuais
 
 **Abra seu Virtual Box para dar inicio a esse passo**
 
